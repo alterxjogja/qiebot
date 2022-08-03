@@ -1,17 +1,14 @@
 
-
-    // BOT VARIABLE // MULTIPLE WITH ',' TANPA SPASI 
-    TZ: 'Asia/Jakarta',
-    URL_RULES: 'https://alterxjogja.github.io',
+    URL_RULES: 'di Link Bio',
 
     TRIGGER: 'fuck,ngentod,halo,hey',
-    ADMIN: '1131977140633710593, 1119544717555822592',
-    MODERATOR: '982278529',
+    ADMIN: '982278529',
+    MODERATOR: '',
 
     DB_SEND_SIZE: 5000,
 
     TOKEN_RESET_DAY: 1, //https://en.wikipedia.org/wiki/ISO_week_date
-    TOKEN_NAME: 'Ticket',
+    TOKEN_NAME: 'Tiket',
 
     BOT_STATUS: true,
     BOT_STATUS_RESPONSE: 'Maaf BOT sedang OFF. Tunggu pengumuman dari Admin.',
@@ -23,8 +20,10 @@
     GREET_NEW_FOLLOWER_RESPONSE: 'Terima kasih udah follow Base, silahkan kirim /menu atau baca PERATURAN BASE ${URL_RULES} dahulu!',
 
     GREET_NEW_FOLLOWING: true,
-    GREET_NEW_FOLLOWER_RESPONSE: 'Yey Kamu difollow Base ini, silahkan kirim /menu atau baca PERATURAN BASE ${URL_RULES} dahulu!',
+    GREET_NEW_FOLLOWING_RESPONSE: 'Yey Kamu difollow Base ini, silahkan kirim /menu atau baca PERATURAN BASE ${URL_RULES} dahulu!',
     //TOKEN RATE 
+
+    LIMIT_FACTOR: 2,// semua rate dibagi factor kalau akun on limit
 
     RATE_REPLY: 2500,
     RATE_REPLY_MIN: 0.2,
@@ -59,7 +58,7 @@
     //FILTER WORDS
 
     BLACKLIST_WORDS: 'cc,open,bo,b0,angle,angl3',
-    BLACKLIST_WORDS_RESPONSE: 'Terdapat blacklist word di Menfess Kamu, ketik /blacklist untuk melihat daftar blacklist. Terdeteksi :',
+    BLACKLIST_WORDS_RESPONSE: 'Terdapat blacklist words di Menfess Kamu. Terdeteksi :',
 
     SIMILARITY_CHECK_TWEETS: 10, //number of last tweet to be checked
     SIMILARITY_THRESHOLD: 0.9,
@@ -70,7 +69,7 @@
 
     // MENFESS SETTING VARIABLE
 
-    
+
     MIN_MENFESS_LENGTH_CHARACTER: 10,
     MAX_MENFESS_LENGTH_CHARACTER: 1120,
     MENFESS_LENGTH_CHARACTER_RESPONSE: 'Minimal jumlah karater Menfess adalah ${MIN_MENFESS_LENGTH_CHARACTER} dan Maksimal ${MAX_MENFESS_LENGTH_CHARACTER}.',
@@ -104,7 +103,10 @@
 
     TEXT_WARN_FOOTER: 'Silahkan baca PERATURAN BASE ${URL_RULES}.',
 
-    UNSEND_MAX_TIME: 15, //mins
+    UNSEND_MAX_TIME: 15, //minutes
+    MAX_QUEUE_MENFESS: 30, //mins
+
+    MAX_QUEUE_MENFESS_RESPONSE: 'Maaf Antrian Menfess sudah penuh, silahkan coba beberapa saat lagi ya', //mins
 
 
     // FILTER EGIBLE SENDER
@@ -139,6 +141,7 @@
     TEXT_COMMAND_MENU: 'Ketik /menu untuk melihat menu follower.',
 
     // BANNED BOT
+    WARN_TO_BANNED: 2, //x warning
     BANNED_LVL_1: 3, //days
     BANNED_LVL_2: 7,
     BANNED_LVL_3: 14,
@@ -146,20 +149,5 @@
     BANNED_RESET_PERIOD: 90,//days
     TEXT_BANNED_HEADER: 'Kamu sedang di-banned oleh BOT  ',
     TEXT_BANNED_FOOTER: '. Banned kamu akan berakhir pada : ',
+    TEXT_BANNED_END: 'Masa Banned kamu akan berakhir silahkan mengirim Menfess lagi.',
 
-
-    MENU_STATUS: 'Status',
-    MENU_STATUS_D: 'Status Akun',
-    MENU_STATUS_ID: 'menu_1',
-
-    MENU_RULE_BOT: 'Rule Bot',
-    MENU_RULE_BOT_D: 'Peraturan Bot',
-    MENU_RULE_BOT_ID: 'menu_2',
-
-    MENU_RULE_MENFESS: 'Rule Menfess',
-    MENU_RULE_MENFESS_D: 'Peraturan Menfess',
-    MENU_RULE_MENFESS_ID: 'menu_3',
-
-    MENU_RESET: 'Reset',
-    MENU_RESET_D: 'Reset Bot jika error',
-    MENU_RESET_ID: 'menu_10',
